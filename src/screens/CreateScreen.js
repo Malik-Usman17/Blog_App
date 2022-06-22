@@ -1,5 +1,5 @@
-import React, {useContext, useState} from 'react';
-import {View, Text, TextInput, StyleSheet, Button} from 'react-native';
+import React, { useContext } from 'react';
+import { StyleSheet } from 'react-native';
 import BlogPostForm from '../components/BlogPostForm';
 import { Context } from '../context/BlogContext';
 
@@ -15,34 +15,6 @@ const CreateScreen = ({navigation, route}) => {
         addBlogPost(title, content, () => navigation.navigate('IndexScreen'))
       }}
     />
-    // <View>
-      
-    //   <Text style={styles.label}>Enter Title:</Text>
-      
-    //   <TextInput 
-    //     style={styles.input} 
-    //     value={title} 
-    //     onChangeText={setTitle}
-    //   />
-
-    //   <Text style={styles.label}>Enter Content:</Text>
-
-    //   <TextInput 
-    //     style={styles.input} 
-    //     value={content} 
-    //     onChangeText={setContent}
-    //   />
-
-    //   <Button 
-    //     title='Add your blog'
-    //     onPress={() => {
-    //       addBlogPost(title, content, () => {
-    //         navigation.navigate('IndexScreen')
-    //       })
-    //     }}
-    //   />
-    
-    // </View>
   )
 }
 
